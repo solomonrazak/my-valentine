@@ -31,7 +31,7 @@ body{
 }
 .container{
     
-    height: 500px;
+    height: 530px;
     width: 400px;
     background-color: white;
     background-image: url('./assets/maamee.jpg');
@@ -165,7 +165,7 @@ body{
 }
 .btn {
     position: absolute;
-    top: 37rem;
+    top: 39rem;
     min-width: 120px;
     padding: 5px;
     font-size: 18px;
