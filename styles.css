@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: linear-gradient(to right bottom, #cffafe, #22d3ee); */
+    justify-items: center;
+    align-items: center;
+    
+   
+
+}
+.dont{
+    display: flex;
+    direction: column;
+}
+.big-cont{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    text-align: center;
+    
+}
+.container{
+    
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    background-image: url('./assets/maamee.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-top: 20px;
+    display: block;
+    border-radius: 5px;
+    
+}
+/* .dynamic-txts li{
+    position: relative;
+}
+.dynamic-txts li:after{
+    content: "";
+    position: absolute;
+    animation: typing 3s steps(10) infinite;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.dynamic-txts li{
+    text-align: center;
+    list-style: none;
+    color: red;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    font-size: 70px; */
+
+    
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+
+/* }
+
+@keyframes typing{
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+} */
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: hsl(0, 69%, 60%);
+    --color-2: #3D8DAE;
+    --color-3: hsl(310, 53%, 78%);
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: hsl(314, 27%, 74%);
+    --color-2: hsl(355, 69%, 51%);
+    --color-3: hsl(252, 74%, 63%);
+  }
+  
+  .title-word-4 {
+    --color-1: hsl(310, 83%, 48%);
+    --color-2: hsl(231, 76%, 53%);
+    --color-3: hsl(69, 79%, 40%);
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+
+ 
+
+  .hide{
+    display: none;
+  }
+  .gifs{
+    flex: 1;
+    position: relative;
+    top: 50px;
+    isolation: isolate;
+    width: 50%;
+  }
+
+.image-1,
+.image-2{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.image-1{
+    width: 175px;
+}
+.image-2{
+    width: 250px;
+}
+.btn {
+    position: absolute;
+    top: 32rem;
+    min-width: 120px;
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(244, 142, 159);
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: #ed5c5ace;
+    border: none;
+    font-weight: 400;
+
+}
+.btn:hover{
+    background-color: hsl(311, 89%, 52%);
+}
+.btn-yes{
+    left: 10%;
+    transform: translateX(calc(100%-1rem));
+    z-index: 1;
+}
+.btn-no{
+    right: 8%;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.yes{
+    text-align: center;
+    margin-top: -20px;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+.heart {
+    background-color: red;
+    
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    padding-bottom: 10px;
+   
+    transform: rotate(45deg);
+  }
+
+  .heart {
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+     
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      
+      border-radius: 50%;
+    }
+  
+    &::before {
+      
+      left: -25px;
+    }
+  
+    &::after {
+      
+      top: -25px;
+    }
+  }
