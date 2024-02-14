@@ -41,6 +41,7 @@ body{
     margin-top: 20px;
     display: block;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px #e3589eb3;
     
 }
 /* .dynamic-txts li{
